@@ -30,4 +30,5 @@ and \\n(bo \\*(BB of beer on the wall.
 ..
 .als BO bo
 
-.BO 5
+.if !ry .nr y 5
+.BO \ny

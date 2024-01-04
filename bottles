@@ -10,7 +10,9 @@
 . if `\\$0`BO` .nr BO \\$1
 . lp
 ' pl BB \\$1 bottle
-\\$1 \\*(BB of beer on the wall, \\$1 \\*(BB of beer,
+\\$1 \\*(BB of beer on the wall,
+. br
+\\$1 \\*(BB of beer,
 . br
 . ie `\\$1`0` \{\
 You go to the store, and buy some more,
@@ -31,4 +33,5 @@ and \\n(bo \\*(BB of beer on the wall.
 .als BO bo
 
 .if !ry .nr y 5
+.2c
 .BO \ny

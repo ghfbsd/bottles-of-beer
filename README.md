@@ -1,6 +1,6 @@
 # bottles-of-beer
 
-troff/groff program to write out verses of the song, "99 bottles of beer on the wall."
+troff/groff program to write out verses of the song, "99 bottles of beer on the wall," a contribution to the [collection](http:www.99-bottles-of-beer.net).
 
 Use by saying,
 

@@ -13,12 +13,9 @@
 . if `\\$0`BO` .nr BO \\$1
 . sp 0.5v
 ' pl BB \\$1 bottle
-' ie `\\$1`0` \{\
-No more bottles of beer on the wall, no more bottles of beer.
-. \}
-. el \{
-\\*(BB of beer on the wall, \\*(BB of beer.
-. \}
+' ie `\\$1`0` No more bottles \c
+. el          \\*(BB \c
+of beer on the wall, \\*(BB of beer.
 . nr bo \\$1u-1u
 . ie 1u+\\n(bo \{\
 Take one down, and pass it around, \c

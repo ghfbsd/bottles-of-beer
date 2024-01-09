@@ -17,7 +17,7 @@
 . el          \\*(BB \c
 of beer on the wall, \\*(BB of beer.
 . nr bo \\$1u-1u
-. ie 1u+\\n(bo \{\
+. ie \\n(bou+1u \{\
 Take one down, and pass it around, \c
 .   pl BB \\n(bo bottle
 . \}

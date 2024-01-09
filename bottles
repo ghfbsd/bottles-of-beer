@@ -5,25 +5,25 @@
 .lp
 .nf
 .de pl
-' ie     `\\$2`1` .ds \\$1 "\\$2 \\$3
-' el .ie `\\$2`0` .ds \\$1 "no more \\$3s
-' el              .ds \\$1 "\\$2 \\$3s
+. ie     `\\$2`1` .ds \\$1 "\\$2 \\$3
+. el .ie `\\$2`0` .ds \\$1 "no more \\$3s
+. el              .ds \\$1 "\\$2 \\$3s
 ..
 .de bo
 . if `\\$0`BO` .nr BO \\$1
 . sp 0.5v
-' pl BB \\$1 bottle
-' ie `\\$1`0` No more bottles \c
+. pl BB \\$1 bottle
+. ie `\\$1`0` No more bottles \c
 . el          \\*(BB \c
 of beer on the wall, \\*(BB of beer.
 . nr bo \\$1u-1u
 . ie 1u+\\n(bo \{\
 Take one down, and pass it around, \c
-'   pl BB \\n(bo bottle
+.   pl BB \\n(bo bottle
 . \}
 . el \{\
 Go to the store, and buy some more, \c
-'   pl BB \\n(BO bottle
+.   pl BB \\n(BO bottle
 . \}
 \\*(BB of beer on the wall.
 . if \\n(bou+1u .bo \\n(bo
